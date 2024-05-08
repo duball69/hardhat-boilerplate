@@ -1,11 +1,14 @@
 require("@nomicfoundation/hardhat-toolbox");
 
-// The next line is part of the sample project, you don't need it in your
-// project. It imports a Hardhat task definition, that can be used for
-// testing the frontend.
-require("./tasks/faucet");
-
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
-  solidity: "0.8.17",
+  solidity: "0.8.24",
+  networks:{
+    sepolia:{
+      url: "https://eth-sepolia.g.alchemy.com/v2/M87svOeOrOhMsnQWJXB8iQECjn8MJNW0",
+      accounts: [
+        "7388479fffd177a96efa0ca7e9596f0ea1478e090c9082a427052129c3d53df6"
+      ],
+    },
+  },
 };

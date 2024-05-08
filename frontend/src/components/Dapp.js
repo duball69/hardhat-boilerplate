@@ -1,7 +1,7 @@
 import React from "react";
 
 // We'll use ethers to interact with the Ethereum network and our contract
-import { ethers } from "ethers";
+import { ethers } from "hardhat";
 
 // We import the contract's artifacts and address here, as we are going to be
 // using them with ethers
